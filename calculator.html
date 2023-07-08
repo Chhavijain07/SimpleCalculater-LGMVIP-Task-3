@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <link rel="stylesheet" href="calculator.css">
+    
+</head>
+<body>
+    <center>
+    <div class="number">
+
+   <input type="text" id="result" >
+ 
+    <div class="numbers">
+        <button class="num" value ="1" onclick="values(1)">1</button>
+        <button class="num"value ="2"  onclick="values(2)">2</button>
+        <button class="num" value ="3" onclick="values(3)">3</button>
+        <button class="num1"value ="+" onclick="values(value)">+</button>
+     
+    </div>
+    <div class="numbers">
+        <button class="num" value ="4" onclick="values(4)">4</button>
+        <button class="num" value ="5" onclick="values(5)">5</button>
+        <button class="num" value ="6" onclick="values(6)">6</button>
+        <button class="num1" value ="-" onclick="values(value)">-</button>
+    </div>
+    <div class="numbers">
+        <button  class="num" value ="7" onclick="values(7)">7</button>
+        <button  class="num" value ="8" onclick="values(8)">8</button>
+        <button  class="num"value ="9" onclick="values(9)">9</button>
+        <button class="num1" value ="*" onclick="values(value)">*</button>
+    </div>
+    <div class="numbers">
+       
+        <button  class="num1" value ="=" onclick="solution()">=</button>
+        <button  class="num1" value ="0" onclick="values(0)">0</button>
+        <button  class="num1" value ="clr" onclick="length()">C</button>
+        <button  class="num1"value ="/" onclick="values(value)">/</button>
+    </div>
+</div>
+</center>
+    <script>
+        let result=document.getElementById("result");
+        function values(val){
+       
+       result.value= result.value+val;
+       
+        }
+        let solution=()=>{
+            result.value= eval(result.value);
+        }
+       let length=()=>{
+        result.value=result.value.slice(0,  result.value.length-1 );
+       }
+       
+    </script>
+</body>
+</html>

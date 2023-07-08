@@ -1,0 +1,50 @@
+body{
+    background-color: black;
+  }
+    .number .num {
+        padding-left: 10px;
+margin-top: 30px;
+text-align: center;
+padding-right: 10px;
+margin-left: 10px;
+width: 32px;
+height: 32px;
+font-weight: bold;
+background-color: black;
+color: white;
+border-color: black;
+      }
+
+#result{
+    margin-left: 0px;
+    text-align: center;
+    padding-top: 20px;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    border-color: black;
+    text-align: end;
+    padding-left: 30px;
+  }
+  .num1{
+    padding-left: 10px;
+  margin-top: 30px;
+  text-align: center;
+  padding-right: 10px;
+  margin-left: 10px;
+  width: 32px;
+  height: 32px;
+  font-weight: bold;
+  background-color: #d3aa76;
+  color: black;
+  border-color: black;
+}
+  
+
+.number{
+  margin-top: 200px;
+background-color: rgba(255, 232, 232, 0.51);
+width: 200px;
+height: 350px;
+   
+}
